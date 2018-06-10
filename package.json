@@ -2,9 +2,11 @@
   "name": "idbcrud",
   "version": "1.0.2",
   "description": "This module aims to make easy idb crud operations.",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel index.js --watch --out-file dist/index.js --presets es2015",
+    "build": "babel index.js --out-file dist/index.js --presets es2015"
   },
   "keywords": [
     "indexeddb",
@@ -18,5 +20,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Berc21/idbcrud.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
