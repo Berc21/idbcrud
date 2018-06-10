@@ -1,6 +1,6 @@
 {
   "name": "idbcrud",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This module aims to make easy idb crud operations.",
   "main": "./dist/index.js",
   "scripts": {
